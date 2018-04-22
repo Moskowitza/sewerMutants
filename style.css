@@ -5,7 +5,10 @@ body {
 }
 h1 {color: red;}
 p {color: blue;}
-
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
 #one {
     z-index: 10;
     border-radius: 25px;
@@ -20,11 +23,14 @@ p {color: blue;}
 }
 #two {
     border-radius: 15px 50px 30px;
-    background: #73AD21;
+    /* background: #73AD21; */
     padding: 20px; 
     width: 200px;
     height: 150px; 
     float:left;
+    animation-name: example;
+    animation-duration: 4s;
+
 }
 #three {
     border-radius: 15px 50px 30px;
