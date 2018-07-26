@@ -19,7 +19,7 @@ p {color: blue;}
     float:left;
     box-shadow: 10px 10px 5px grey;
     transform: translate(50px, 100px) rotate(20deg);
-
+    opacity: 0.5;
 }
 #two {
     border-radius: 15px 50px 30px;
@@ -64,12 +64,12 @@ p {color: blue;}
     padding: 20px; 
     width: 200px;
     height: 150px; 
+    
     float:left;
     transform: matrix(1, -0.3, 0, 1, 0, 0);
     transition: width 2s, height 4s;
 }
 
 #six:hover {
-    
         width: 300px;
     }
