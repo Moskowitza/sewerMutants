@@ -42,12 +42,15 @@ p {color: blue;}
 }
 #four {
     border-radius: 50%;
-    background: #73AD21;
+    background: rgb(0, 151, 162);
     margin:10px;
     padding: 20px; 
     width: 150px;
     height: 150px; 
-    float:left;
+    /* float:left; */
+
+    -webkit-animation-name: example;
+    animation-duration: 8s;
 }
 #five {
     border-radius: 15px 50px 30px;
@@ -72,4 +75,11 @@ p {color: blue;}
 
 #six:hover {
         width: 300px;
+    }
+    @-webkit-keyframes example {
+        0%   {background-color:rgb(0, 151, 162); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(0, 151, 162); left:0px; top:200px;}
+
     }
