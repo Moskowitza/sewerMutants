@@ -5,7 +5,10 @@ body {
 }
 h1 {color: red;}
 p {color: blue;}
-
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
 #one {
     z-index: 10;
     border-radius: 25px;
@@ -16,15 +19,18 @@ p {color: blue;}
     float:left;
     box-shadow: 10px 10px 5px grey;
     transform: translate(50px, 100px) rotate(20deg);
-
+    opacity: 0.5;
 }
 #two {
     border-radius: 15px 50px 30px;
-    background: #73AD21;
+    /* background: #73AD21; */
     padding: 20px; 
     width: 200px;
     height: 150px; 
     float:left;
+    animation-name: example;
+    animation-duration: 4s;
+
 }
 #three {
     border-radius: 15px 50px 30px;
@@ -36,12 +42,15 @@ p {color: blue;}
 }
 #four {
     border-radius: 50%;
-    background: #73AD21;
+    background: rgb(0, 151, 162);
     margin:10px;
     padding: 20px; 
     width: 150px;
     height: 150px; 
-    float:left;
+    /* float:left; */
+
+    -webkit-animation-name: example;
+    animation-duration: 8s;
 }
 #five {
     border-radius: 15px 50px 30px;
@@ -58,17 +67,26 @@ p {color: blue;}
     padding: 20px; 
     width: 200px;
     height: 150px; 
+    
     float:left;
     transform: matrix(1, -0.3, 0, 1, 0, 0);
     transition: width 2s, height 4s;
 }
 
 #six:hover {
-    
         width: 300px;
     }
+<<<<<<< HEAD
     
     #six  {
     
         position: relative;
+=======
+    @-webkit-keyframes example {
+        0%   {background-color:rgb(0, 151, 162); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:rgb(0, 151, 162); left:0px; top:200px;}
+
+>>>>>>> f77a30ad274d94f6f5816eddc2a58339bf326522
     }
