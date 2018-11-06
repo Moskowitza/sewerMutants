@@ -1,31 +1,35 @@
-$(window)
-  .scroll(function() {
-    // selectors
-    var $window = $(window),
-      $body = $("body"),
-      $panel = $(".panel");
+// debounce puts a speedlimit on our event listener
+function debounce(func, wait = 20, immediate = true) {
+  var timeout;
+  return function() {
+    var context = this,
+      args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+const panels = document.querySelectorAll(".panel");
 
-    // Change 33% earlier than scroll position so colour is there when you arrive.
-    var scroll = $window.scrollTop() + $window.height() / 3;
+function checkSlide(e) {
+  panels.forEach(panel => {
+    console.log(panel.dataset.color);
+    if (
+      panel.offsetTop <= window.scrollY &&
+      panel.offsetTop + panel.clientHeight > window.scrollY
+    ) {
+      document.body.removeAttribute("style");
 
-    $panel.each(function() {
-      var $this = $(this);
-
-      // if position is within range of this panel.
-      // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-      // Remember we set the scroll to 33% earlier in scroll var.
-      if (
-        $this.position().top <= scroll &&
-        $this.position().top + $this.height() > scroll
-      ) {
-        // Remove all classes on body with color-
-        $body.removeClass(function(index, css) {
-          return (css.match(/(^|\s)color-\S+/g) || []).join(" ");
-        });
-
-        // Add class of currently active div
-        $body.addClass("color-" + $(this).data("color"));
-      }
-    });
-  })
-  .scroll();
+      document.body.setAttribute(
+        "style",
+        "background-color:" + panel.dataset.color + ";"
+      );
+    }
+  });
+}
+window.addEventListener("scroll", debounce(checkSlide));
