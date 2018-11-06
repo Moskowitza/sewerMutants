@@ -21,7 +21,7 @@ function checkSlide(e) {
     console.log(panel.dataset.color);
     if (
       panel.offsetTop <= window.scrollY &&
-      panel.offsetTop + panel.clientHeight > window.scrollY
+      panel.offsetTop + panel.clientHeight > window.scrollY * 0.33
     ) {
       document.body.removeAttribute("style");
 
