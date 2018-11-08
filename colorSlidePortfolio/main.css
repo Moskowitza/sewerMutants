@@ -19,6 +19,10 @@
     margin:0;
     justify-content: space-around;
   }
+  .fixed-nav nav{
+    position:fixed;
+    box-shadow:0 5px rgb(0,0,0,.1);
+  }
   
 header {
     /* height: 10rem; */

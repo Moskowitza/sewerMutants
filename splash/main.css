@@ -1,0 +1,19 @@
+body{
+    margin:0;
+}
+#hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background: violet;
+}
+#hero > * {
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  padding:0 0 0 10%;
+  transform: skew(-15deg)
+}
+
