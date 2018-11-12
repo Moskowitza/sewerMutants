@@ -1,0 +1,19 @@
+div#main {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+div.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+body {
+    margin: 0 auto;
+}

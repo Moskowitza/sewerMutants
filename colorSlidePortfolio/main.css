@@ -107,9 +107,18 @@ footer {
     margin: 0;
     justify-content: space-around;
   }
+<<<<<<< HEAD
 
   header {
     order: 0;
+=======
+  .fixed-nav nav{
+    position:fixed;
+    box-shadow:0 5px rgb(0,0,0,.1);
+  }
+  
+header {
+>>>>>>> 25dac66f8470552923d4a1a7a3b2a0cd9372b3f8
     /* height: 10rem; */
     background-color: var(--blue);
     color: var(--offWhite);
