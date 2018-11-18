@@ -12,8 +12,11 @@ var setup = function () {
         circle.className = 'circle number'+i;
         // put each circle div into an array
         circleArray.push(circle);
+        //Style positioning
+        // for each circle in the array, give it a posx,posy attribute based on circumference equation  
         circleArray[i].posx = Math.round(radius * (Math.cos(theta[i]))) + 'px';
         circleArray[i].posy = Math.round(radius * (Math.sin(theta[i]))) + 'px';
+        
         circleArray[i].style.position = "absolute";
         circleArray[i].style.backgroundColor = colors[i];
         circleArray[i].style.top = ((mainHeight / 2) - parseInt(circleArray[i].posy.slice(0, -2))) + 'px';

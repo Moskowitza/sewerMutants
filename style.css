@@ -1,10 +1,13 @@
 body {
     /* background: radial-gradient(closest-side at 60% 55%, red, yellow, black); */
     background-repeat: no-repeat;
-
 }
 h1 {color: red;}
-p {color: blue;}
+p {
+    color: blue;
+    font-size:50px;
+    font-weight:bold;
+}
 @keyframes example {
     from {background-color: red;}
     to {background-color: yellow;}
@@ -22,7 +25,7 @@ p {color: blue;}
     opacity: 0.5;
 }
 #two {
-    border-radius: 15px 50px 30px;
+    border-radius: 4em 8em;
     /* background: #73AD21; */
     padding: 20px; 
     width: 200px;
@@ -30,15 +33,17 @@ p {color: blue;}
     float:left;
     animation-name: example;
     animation-duration: 4s;
-
 }
 #three {
-    border-radius: 15px 50px 30px;
-    background: #73AD21;
+    border-radius: 60% 20% 30% 60%/ 40% 20% 50% 60%;
+    background:linear-gradient(pink, red, purple, blue);
     padding: 20px; 
-    width: 200px;
-    height: 150px; 
+    width: 500px;
+    height: 240px; 
+    display:flex;
     float:left;
+    align-items: center;
+    justify-content: center;
 }
 #four {
     border-radius: 50%;
