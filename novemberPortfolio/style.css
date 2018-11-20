@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightyellow;
+}
+header {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 8rem;
+  width: 50%;
+  padding: 1rem;
+  text-shadow: -3px 2px 8px pink, 4px 4px 8px yellow, 1px 10px 8px lightblue;
+}
+
+#main {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 1rem;
+  box-sizing: border-box;
+  size: 0.8rem;
+}
+a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+a:hover {
+  color: lightyellow;
+  size: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+.panel {
+  width: 20rem;
+  align-self: flex-start;
+  margin-left:5rem;
+}
+.panel:nth-child(even) {
+  /* background-color: blue; */
+  align-self: flex-end;
+}
+.panel > h2 {
+  border-bottom: 5px solid rgb(91, 28, 28);
+}

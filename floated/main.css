@@ -1,22 +1,12 @@
-.background{
-  background-color: red;
-  display:flex;
-  border: 1px solid black;
-  height: 250px;
-  width: 500px;
-}
 .outer {
   position: relative;
-  box-sizing: border-box;
-  display: inline-block;
-
+  background-color: red;
 }
 .inner {
   position: absolute;
   font-size: 250px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
 #first {
   opacity: 0.5;
   color: orange;
