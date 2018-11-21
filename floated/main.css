@@ -1,0 +1,21 @@
+.outer {
+  position: relative;
+  background-color: red;
+}
+.inner {
+  position: absolute;
+  font-size: 250px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#first {
+  opacity: 0.5;
+  color: orange;
+}
+#second {
+  opacity: 0.5;
+  color: purple;
+}
+#third {
+  opacity: 0.5;
+  color: pink;
+}

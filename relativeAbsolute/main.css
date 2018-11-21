@@ -1,0 +1,25 @@
+.outer {
+
+  background-color: red;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+}
+.inner {
+  float:center;
+  font-size:8rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#first {
+  opacity: 0.5;
+  color: blue;
+}
+#second {
+  opacity: 0.5;
+  color: purple;
+}
+#third {
+  opacity: 0.5;
+  color: pink;
+}
