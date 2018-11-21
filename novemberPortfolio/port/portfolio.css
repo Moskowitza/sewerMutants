@@ -16,7 +16,6 @@ body {
   background-color: lightyellow;
   min-height:  calc(100vh - 100px);
 
-
 }
 #logo {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -61,16 +60,17 @@ main {
   margin: 2rem;
   letter-spacing: -1px;
   font-weight: 900;
-  font-size: 10px;
+  font-size: 1rem;
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 .project {
-  background: pink;
+  background: rgb(172, 174, 126);
   font-weight:100;
+  height:100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: grid;
@@ -84,19 +84,21 @@ main {
   height:140px;
   border-radius: 3px;
 }
-.project__details{
+/* .project__details{
     height:100%;
     display:flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content: space-between;
-}
+} */
+
 .project__details ul{
     list-style: none;
     display:inline-block;
+    padding:0;
 }
 .project__details li{
     /* list-style: none; */
-    padding:.5rem;
+    padding: 0 .5rem 0  0 ;
     display:inline-block;
 }
