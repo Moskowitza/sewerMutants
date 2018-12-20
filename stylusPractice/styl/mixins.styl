@@ -1,6 +1,13 @@
+vendor(property, arg)
+    {property} arg
+    -webkit-{property} arg
+    -moz-{property} arg
+
+transition(args)
+    vendor('transition',args)
+
 border-radius(radius=5px)
-    -webkit-border-radius radius
-    border-radius radius
+    vendor('border-radius',radius)
 cf()
     zoom 1
     &:after
@@ -9,3 +16,4 @@ cf()
         display table
     &:after
         clear both
+
