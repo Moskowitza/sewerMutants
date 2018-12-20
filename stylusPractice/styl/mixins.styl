@@ -6,6 +6,11 @@ vendor(property, arg)
 transition(args)
     vendor('transition',args)
 
+test(var)
+    margin-top unit(var, 'px')
+        if var>10
+            margin-bottom unit(var, 'px')
+
 border-radius(radius=5px)
     vendor('border-radius',radius)
 cf()
