@@ -1,0 +1,10 @@
+body {
+  background: #475cd1;
+  color: #be2525;
+  border: solid 1px #be2525;
+}
+body main {
+  border: solid 1px #be2525;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

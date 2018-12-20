@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.red-bar {
+  height: 400px;
+  width: 0.5rem;
+  background-color: red;
+  filter: blur(1rem);
+  border-radius: 1rem;
+  transform: rotate(45deg);
+}
+.green-bar {
+  height: 400px;
+  width: 0.5rem;
+  background-color: green;
+  filter: blur(1rem);
+  border-radius: 1rem;
+  transform: rotate(5deg);
+}
+.blue-bar {
+  height: 400px;
+  width: 0.5rem;
+  background-color: blue;
+  filter: blur(1rem);
+  border-radius: 1rem;
+  transform: rotate(-20deg);
+}
+.purple-bar {
+  height: 400px;
+  width: 0.5rem;
+  background-color: purple;
+  filter: blur(1rem);
+  border-radius: 1rem;
+  transform: rotate(-75deg);
+}
+.yellow-bar {
+  height: 400px;
+  width: 0.5rem;
+  background-color: yellow;
+  filter: blur(1rem);
+  border-radius: 1rem;
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,183 @@
+/* Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
+    Teal color (used for headings and backgrounds): #4aaaa5
+    Regular font color (used for paragraphs and all text besides the headings): #777777
+    Main header background color: #ffffff
+    Main header border color: #cccccc
+    Footer background color: #666666
+    Main content background color: #ffffff
+    Main content border color: #dddddd */
+body{
+    color:#777777;
+    background-color:#ffffff;
+    border-color:#dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+a:link {
+        color:#777777; 
+        background-color: transparent; 
+        text-decoration: none;
+    }
+    
+a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+ a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+a:active {
+        color: yellow;
+        background-color: black;
+        text-decoration: none;
+    }
+div{
+    /* position */
+    float: left;
+    position: relative;
+    /* colors, alignment, fonts */
+    background-color:#ffffff;
+    border-color:#cccccc;
+    /* width (270px), margin, border, padding */
+    width: 1000px;
+    }
+nav{
+    /* position */
+    float: left;
+    left: 0;
+    position: absolute;
+    /* colors, alignment, fonts */
+    text-align: right;
+    right: 400px;
+    transform: translatey(50%);
+    background-color:#ffffff;
+    border-color:#cccccc;
+    /* width=1000*/
+    width: 960px;
+    /* height: 50px; */ 
+    margin: 0px;
+    border: 0px;
+    padding-top: 20px;
+    padding-right: 100px;
+    }
+header{
+     /* position */
+        float:left;
+        position:relative;
+        bottom: 0px;
+        left: 80px;
+        z-index:1;
+    /* colors, alignment, fonts */
+        text-align: center;
+        font-size: 24pt;
+        background-color: #4aaaa5;
+        border-color:#cccccc;
+        color:#cccccc;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       /* box size */ 
+        margin-top: 30px;
+        border: 0px;
+        padding: 10px;
+        }
+/* .clearfix::after{ 
+    content:"";
+    display:block;
+    clear:both;
+     }*/
+section{
+    /* Position */
+    float: left;
+    position: relative;
+    /* Trying to get background-image to work, your picture is in another castle */
+    background-image: url("../images/round.png");
+    border-color:#cccccc;
+    /* width 960, margin, border, padding */
+    width: 100%;
+    margin: 0px;
+    border: 20px;
+    padding: 20;
+    }
+
+#aboutme{
+    /* position */
+    float: left;
+    overflow: auto;
+    position: relative;
+    left:30px;
+    /* colors, alignment, fonts */
+    background-color: #ffffff;
+    border-color: #cccccc;
+    /* total width (650), margin(20), border, padding */
+    width: 550px;
+    margin: 20px;
+    border: 10px;
+    padding: 20px;
+    }
+#connect{
+    /* position */
+    float: left;
+    position: relative;
+    /* colors, alignment, fonts */
+    background-color:#ffffff;
+    border-color:#cccccc;
+    /* width (270px), margin, border, padding */
+    width: 270px;
+    margin: 20px;
+    border: 10px;
+    padding: 10px;
+    }
+img{
+    float:left;
+    }
+.face{
+    width: 100px;
+    margin: 10px;
+}
+.portfolio{
+    width: 200px;
+    margin: 0px;
+    border: 0px;
+    padding: 20px;
+}
+.portfolioName{
+    float:left;
+    position:relative;
+    bottom:50px;
+    text-align: center;
+    font-size: 12pt;
+    color:#cccccc;
+    background-color: #4aaaa5;
+    width: 180px;
+    border: 0px;
+    padding: 10px;
+    }
+h1{
+    font-size:24pt;
+    color:#4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+h2{
+    font-size: 18pt;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+footer{
+    /* position */
+    float:left;
+    /* colors, alignment, fonts */
+    background-color: #666666;
+    text-align:center;
+    border-color:#cccccc;
+    /* width, margin, border, padding */
+    width: 960px;
+    margin: 0px;
+    border: 0px;
+    padding: 20px;
+    }
