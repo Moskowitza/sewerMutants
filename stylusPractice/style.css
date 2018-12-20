@@ -1,5 +1,39 @@
 body {
-  background: #800080;
-  padding: 1px;
-  color: #ff0;
+  background: #329fe3;
+  color: #be2525;
+  border: solid 1px #be2525;
+}
+body main {
+  margin-top: 10px;
+  background: rgba(50,159,227,0.9);
+  color: #be2525;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: solid 1px #be2525;
+  border-radius: 20px;
+  padding: 5px;
+  zoom: 1;
+}
+body main:after,
+body main:before {
+  content: "";
+  display: table;
+}
+body main:after {
+  clear: both;
+}
+body aside {
+  margin-top: 5px;
+  background: #e37632;
+}
+body img {
+  margin: 10px 20px;
+  float: right;
+  border-radius: 20% 10%;
+}
+body footer {
+  margin-top: 3rem;
 }
