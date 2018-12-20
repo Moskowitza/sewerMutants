@@ -1,13 +1,16 @@
 body {
-  background: #475cd1;
+  background: #329fe3;
   color: #be2525;
   border: solid 1px #be2525;
 }
 body main {
+  margin-top: 10px;
+  background: rgba(50,159,227,0.9);
   color: #be2525;
   border: solid 1px #be2525;
   -webkit-border-radius: 20px;
   border-radius: 20px;
+  padding: 5px;
   zoom: 1;
 }
 body main:after,
@@ -17,4 +20,13 @@ body main:before {
 }
 body main:after {
   clear: both;
+}
+body aside {
+  margin-top: 5px;
+  background: #e37632;
+}
+body img {
+  float: right;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
 }

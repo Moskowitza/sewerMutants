@@ -1,24 +1,20 @@
-blue=#475CD1
-red=#bE2525
-
-border-radius(radius=5px)
-    -webkit-border-radius radius
-    border-radius radius
-cf()
-    zoom 1
-    &:after
-    &:before
-        content ""
-        display table
-    &:after
-        clear both
+@import 'styl/*'
 
 body
     background blue
     color red
     border solid 1px @color
     main
+        margin-top abs(-10px)
+        background rgba(blue,0.9)
         color @color
         border solid 1px @color
         border-radius 20px;
+        padding 5px
         cf()
+    aside
+        margin-top ceil(4.6px)
+        background complement(blue)
+    img
+        float right 
+        border-radius(20%,10%)
