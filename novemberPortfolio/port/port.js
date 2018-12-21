@@ -1,39 +1,46 @@
 data = {
   proj1: {
-    desc: "ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ",
+    title: "Animal Sanctuaries",
+    desc:
+      "An application for finding and keeping in touch with Animal Sanctuaries.",
     img: "lego.jpg",
-    url: "game.github.io",
-    tech: ["cats", "dogs"]
+    url: "https://farmsanctuaries.herokuapp.com/",
+    tech: ["React", "MySQL", "Heroku"]
   },
   proj2: {
-    desc: "portfolio",
-    url: "portfolio.github.io",
-    tech: ["forks", "spoons", "knives"]
+    title: "Philly Neighbors",
+    desc: "A community Bulletin Board",
+    img: "lego.jpg",
+    url: "https://stormy-temple-91988.herokuapp.com/",
+    tech: ["Sequelize", "MERN", "Handlebars"]
   },
   proj3: {
-    desc: "react app",
-    url: "portfolio.github.io",
-    tech: ["react", "mongodb", "express"]
+    title: "Lost Memory",
+    desc: "React Memory Game",
+    img: "lego.jpg",
+    url: "https://moskowitza.github.io/clickyreact/",
+    tech: ["React", "Yarn"]
   },
   proj4: {
-    desc: "MERN Stack",
-    url: "portfolio.github.io",
-    tech: ["react", "mongodb", "express"]
+    title: "Halloween Hangman",
+    desc: "Simple javascript game",
+    img: "lego.jpg",
+    url: "https://moskowitza.github.io/Hangman-Game/",
+    tech: ["Bootstrap", "Javascript"]
   },
   proj5: {
-    desc: "MERN Stack",
-    url: "portfolio.github.io",
-    tech: ["react", "mongodb", "express"]
+    title: "HiFructose Notes",
+    desc: "Web scrape and save notes using MongoDB",
+    img: "lego.jpg",
+    url: "https://mighty-dawn-76073.herokuapp.com/",
+    tech: ["Express", "MongoDB", "Heroku"]
   },
   proj6: {
-    desc: "API calls",
-    url: "portfolio.github.io",
-    tech: ["google maps", "passport", "express"]
-  },
-  proj7: {
-    desc: "Hangman",
-    url: "portfolio.github.io",
-    tech: ["jQuery", "Bootstrap", "CSS"]
+    title: "Mongo Notes",
+    desc: "Note taker using MongoDB",
+    img: "lego.jpg",
+    url: "https://boiling-garden-17259.herokuapp.com/",
+    tech: ["Express", "MongoDB", "Heroku"]
   }
 };
 var projects = document.querySelector(".projects");
@@ -43,6 +50,7 @@ for (const proj in data) {
     // console.log(proj + " -> " + JSON.stringify(data[proj]));
 
     const newProject = document.createElement("div");
+
     const techList = data[proj].tech;
     console.log(techList);
     newProject.innerHTML = `
@@ -50,8 +58,8 @@ for (const proj in data) {
       <img class="project__img" 
       src="../images/${data[proj].img ? data[proj].img : "alien.jpg"}">
       <div class="project__details">
-        <h2>${proj}</h2>
-        <p class="project__url"> ${data[proj].url}</p>
+        <h2>${data[proj].title}</h2>
+        <a href="${data[proj].url}">link</a>
         <p class="project__desc"> ${data[proj].desc}</p>
         <ul>
           ${techList.map(e => `<li>${e}</li>`).join("")}

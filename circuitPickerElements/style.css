@@ -1,0 +1,61 @@
+body {
+  font: 12px Montserrat, sans-serif;
+  background: #329fe3;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 10rem;
+  font: 2rem Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a9a9a9;
+}
+.navbar-header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d3d3d3;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+li a {
+  font-size: 2rem;
+  display: block;
+  text-decoration: none;
+  font: 4rem;
+  margin-right: 2rem;
+  color: #329fe3;
+}
+li a:hover {
+  background-color: #be2525;
+  color: #000;
+}
+.picker {
+  height: 200px;
+  width: 200px;
+  background-color: #be2525;
+  align-content: center;
+  border: 4px solid #008000;
+  margin: auto;
+  padding: 10px;
+}
+.picker button {
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  background-color: #d3d3d3;
+}
+.picker button:hover {
+  background-color: #a9a9a9;
+}
+.picker select {
+  width: 50%;
+  display: block;
+}
