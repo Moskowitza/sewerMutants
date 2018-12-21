@@ -1,11 +1,10 @@
 {
-  "name": "styluspractice",
+  "name": "circuitpickerelements",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp",
     "build-css": "stylus -u nib -u rupture -u typographic -w style.styl -o style.css"
   },
   "author": "",
@@ -15,9 +14,5 @@
     "rupture": "^0.7.1",
     "stylus": "^0.54.5",
     "typographic": "^3.0.0"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-stylus": "^2.7.0"
   }
 }
