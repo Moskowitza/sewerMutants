@@ -1,18 +1,54 @@
-@import styles/variables
+@import "styles/variables"
 
 body
+    font: 12px Montserrat, sans-serif 
     background blue
-.navbar-header
-
-.navbar-header ul
-    list-style-type: none
-    margin: 0
-    padding: 0
-    overflow: hidden
+    box-sizing: border-box
     display flex
+    flex-direction: column
+header
+    height 10rem
+    font 2rem Montserrat, sans-serif 
+    display flex
+    align-items: center
+    justify-content: center
+    background darkgrey
+.navbar-header
+    list-style-type: none
+    margin 0
+    padding 0
+    overflow hidden
     background-color lightgrey
-    position: fixed;
-    top: 0;
-    width: 100%;
+    width: 100%
+    display flex
+    justify-content flex-end
 li a
+    font-size 2rem
     display block
+    text-decoration: none
+    font 4rem
+    margin-right: 2rem
+    color blue
+    &:hover
+        background-color: red
+        color #000
+.picker
+    height 200px
+    width 200px
+    background-color: red
+    align-content: center
+    border 4px solid green
+    margin auto
+    padding 10px
+    button
+        width 100%
+        font-size 1.25 rem
+        font-family inherit 
+        border 0
+        padding 0
+        background-color lightgrey
+        &:hover
+            background-color darkgrey
+    select
+        width 50%
+        display block
