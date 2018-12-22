@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Info Windows</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var uluru = { content: "uluru", lat: -25.363, lng: 131.044 };
+        var uluru1 = { content: "uluru1", lat: -26.463, lng: 132.044 };
+        var uluru2 = { content: "uluru2", lat: -26.563, lng: 133.044 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru
+        });
+        var locations = [uluru, uluru1, uluru2];
+        var infowindow = new google.maps.InfoWindow({});
+        var marker;
+        for (var i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(
+              locations[i].lat,
+              locations[i].lng
+            ),
+            map: map,
+            title: locations[i].content
+          });
+          google.maps.event.addListener(
+            marker,
+            "click",
+            (function(marker, i) {
+              return function() {
+                infowindow.setContent(locations[i].content);
+                infowindow.open(map, marker);
+              };
+            })(marker, i)
+          );
+        }
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIdo4B_oFM3lR9Qs2Zx4MJoxBrSdvuMJc&callback=initMap"
+    ></script>
+  </body>
+</html>
