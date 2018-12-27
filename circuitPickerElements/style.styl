@@ -32,6 +32,9 @@ li a
     &:hover
         background-color: red
         color #000
+
+
+
 .picker
     height 200px
     width 200px
@@ -49,16 +52,6 @@ li a
         display block
         font-size 1rem
         border 1px solid #cccccc    
-    select
-        width 100%
-        display block
-        margin 50px
-        padding 5px 35px
-        font-size 1rem
-        border 1px solid #cccccc
-        height 1.24rem
-    option
-        text-align center
     button
         width 100%
         font-size 1.25 rem
@@ -67,3 +60,39 @@ li a
         background-color lightgrey
         &:hover
             background-color darkgrey
+.custom-select
+    width 200px
+    position relative
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    select
+        display: none
+.select-selected
+    background-color:red
+.select-selected:after
+    position: absolute
+    content:""
+    top:14px
+    width 0
+    height 0
+    border 6px solid transparent
+    border-color #fff transparent transparent transparent
+.select-selected.select-arrow-active:after
+    border-color: transparent transparent #fff transparent
+    top: 7px;
+.select-items div,.select-selected 
+    color: #ffffff
+    padding: 8px 16px
+    border: 1px solid transparent
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent
+    cursor: pointer
+.select-items 
+    position: absolute
+    background-color: DodgerBlue
+    top: 100%
+    left: 0
+    right: 0
+    z-index: 99
+.select-hide
+    display: none
+.select-items div:hover .same-as-selected
+    background-color: rgba(0, 0, 0, 0.1)

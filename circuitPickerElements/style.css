@@ -54,18 +54,6 @@ li a:hover {
   font-size: 1rem;
   border: 1px solid #ccc;
 }
-.picker select {
-  width: 100%;
-  display: block;
-  margin: 50px;
-  padding: 5px 35px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  height: 1.24rem;
-}
-.picker option {
-  text-align: center;
-}
 .picker button {
   width: 100%;
   font-size: 1.25rem;
@@ -75,4 +63,50 @@ li a:hover {
 }
 .picker button:hover {
   background-color: #a9a9a9;
+}
+.custom-select {
+  width: 200px;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.custom-select select {
+  display: none;
+}
+.select-selected {
+  background-color: #be2525;
+}
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.select-items div,
+.select-selected {
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0,0,0,0.1) transparent;
+  cursor: pointer;
+}
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-hide {
+  display: none;
+}
+.select-items div:hover .same-as-selected {
+  background-color: rgba(0,0,0,0.1);
 }
