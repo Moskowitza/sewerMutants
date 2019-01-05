@@ -3,7 +3,8 @@
 	  <head>
 	    <meta charset="utf-8">
 	    <link href="main.css" rel="stylesheet" />
-	    <title>JavaScript DOM Tutorials</title>
+        <title>JavaScript DOM Tutorials</title>
+        <script src="main.js"></script>
 	  </head>
 	  <body>
 	  	<div id="wrapper">
@@ -38,11 +39,26 @@
 		    	</ul>
 		    </div>
 		    <form id="add-book">
+                <input type="checkbox" id="hide"/>
+                <label for="hide">Hide all Books</label>
 		    	<input type="text" placeholder="Add a book..." />
 		    	<button>Add</button>
 		    </form>
-	
+	        <div id="tabbed-content">
+                    <ul class="tabs">
+                        <li data-target="#about" class="active">About</li>
+                        <li data-target="#contact">Contact</li>    
+                    </ul>
+                    <div class="panel active" id="about">
+                        <p>Content for About Tab...</p>
+                        <p>This is a tutorial from the Net Ninja</p>
+                    </div>
+                    <div class="panel" id="contact">
+                            <p>Content for Contact Tab...</p>
+                            <p>Contact the Net Ninja</p>
+                    </div>
+                </div>
 	    </div>
-	    <script src="main.js"></script>
+
 	  </body>
 	</html>
