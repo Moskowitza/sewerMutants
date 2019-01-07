@@ -17,3 +17,7 @@
 [Set Splash to full height](https://moskowitza.github.io/sewerMutants/splash/index.html)
 
 [ToDo List book list](https://moskowitza.github.io/sewerMutants/toDoList/index.html)
+
+[ToDo List][todo list book list](https://moskowitza.github.io/sewerMutants/toDoList/LoopListener/loopListener.html)
+
+[ToDo jQuery](https://moskowitza.github.io/sewerMutants/toDoList/studentExample.html/studentExample.html)
