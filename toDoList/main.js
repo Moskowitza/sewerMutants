@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
       list.removeChild(li);
     }
   });
+  Array.from(btns).forEach(function(btn) {
+    btn.addEventListener("click", function(e) {
+      //Grab the LI tag that holds the btn being clicked
+      const li = e.target.parentElement;
+      //have the LI's parent (the UL) remove the child...itself
+      li.parentNode.removeChild(li);
+    });
+  });
 
   const addForm = document.forms["add-book"];
 
