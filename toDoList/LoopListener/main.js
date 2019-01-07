@@ -10,6 +10,7 @@ addForm.addEventListener("submit", function(e) {
   if (toDoItem.length > 0) {
     console.log(toDoItem);
     const blockContainer = document.createElement("div");
+    blockContainer.setAttribute("class", "to-do-item");
     blockContainer.style.display = "block";
     const input = document.createElement("input");
     const label = document.createElement("label");
@@ -32,14 +33,17 @@ addForm.addEventListener("submit", function(e) {
 //remove when checked
 
 ToDos.addEventListener("submit", function(e) {
+  // prevent the page from reloading
   e.preventDefault();
-  console.log("hi");
-
-  const listArray = ToDos.getElementsByTagName("INPUT");
+  //   get an array of our to-do divs
+  const listArray = Array.from(ToDos.querySelectorAll(".to-do-item"));
   console.log(listArray);
-  Array.from(listArray).forEach(item => {
-    if (item.checked) {
-      ToDos.removeChild(item);
+  listArray.forEach(item => {
+    const checkbox = item.querySelector("input[type='checkbox']");
+    const thisDiv = checkbox.parentNode;
+    console.log(thisDiv);
+    if (checkbox.checked == true) {
+      ToDos.removeChild(thisDiv);
     }
   });
 });
