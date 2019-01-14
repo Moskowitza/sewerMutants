@@ -1,0 +1,38 @@
+/* Extra small devices (phones, 600px and down) */
+.circle {
+  border-radius: 50%;
+  background: blue;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+#root {
+  height: 400px;
+}
+@media only screen and (max-width: 600px) {
+  #root {
+    background: rgb(255, 0, 0);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+  #root {
+    background: rgb(255, 64, 0);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #root {
+    background: rgb(255, 128, 0);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #root {
+    background: rgb(255, 191, 0);
+  }
+}
