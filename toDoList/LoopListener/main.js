@@ -37,11 +37,11 @@ ToDos.addEventListener("submit", function(e) {
   e.preventDefault();
   //   get an array of our to-do divs
   const listArray = Array.from(ToDos.querySelectorAll(".to-do-item"));
-  console.log(listArray);
+  //   look through the list for checked items
   listArray.forEach(item => {
     const checkbox = item.querySelector("input[type='checkbox']");
     const thisDiv = checkbox.parentNode;
-    console.log(thisDiv);
+    // if the checkbox is checked, remove the container div
     if (checkbox.checked == true) {
       ToDos.removeChild(thisDiv);
     }
