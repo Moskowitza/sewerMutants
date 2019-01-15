@@ -1,6 +1,6 @@
-const root = document.getElementById('root');
-const circle = document.createElement('DIV');
-let text = '';
+const root = document.getElementById("root");
+const circle = document.createElement("DIV");
+let text = "";
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 root.innerHTML = `
@@ -8,26 +8,26 @@ root.innerHTML = `
   <p>Window Height${windowHeight}</p>
   `;
 const addCircle = function() {
-  circle.classList.add('circle');
+  circle.classList.add("circle");
   root.appendChild(circle);
 };
 
 const setCircleText = function() {
   switch (windowWidth) {
     case windowWidth < 600:
-      text = 'small';
+      text = "small";
       circle.textContent = text;
       break;
     case windowWidth < 922:
-      text = 'medium';
+      text = "medium";
       circle.textContent = text;
       break;
     case windowWidth < 1200:
-      text = 'Large';
+      text = "Large";
       circle.textContent = text;
       break;
     default:
-      text = 'No value found';
+      text = "No value found";
       circle.textContent = text;
   }
 };
@@ -45,4 +45,4 @@ const displaySize = function() {
   setCircleText();
 };
 // Javascript to Display size
-window.addEventListener('resize', displaySize);
+window.addEventListener("resize", displaySize);
