@@ -1,7 +1,8 @@
 const root = document.getElementById('root');
 const circle = document.createElement('DIV');
 circle.classList.add('circle');
-let circleText = '';
+let circleText = 'resize for info';
+circle.textContent = circleText;
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 root.innerHTML = `
