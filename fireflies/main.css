@@ -1,13 +1,18 @@
 .dot {
   border-radius: 50%;
-  background: blue;
+  background: black;
+  height: 50px;
+  width: 50px;
+}
+.glow {
+  border-radius: 50%;
+  background: red;
   height: 50px;
   width: 50px;
   transform: 2s;
-}
-.glow {
-  /* box-shadow: pink; */
+  box-shadow: pink;
   filter: blur(8px);
+  display: show;
 }
 body {
   background: black;

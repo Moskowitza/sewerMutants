@@ -14,13 +14,18 @@ function randomDot(doots) {
   lastDot = dot;
   return dot;
 }
-
+function moveDot(dot, time, distance) {
+  dot.style.transitionDuration = `${time / 2000}s`;
+  dot.style.transform = `translate(${distance}px,${distance / 3}px )`;
+}
 function glow() {
   const time = randomTime(200, 1000);
+  const distance = randomTime(-1000, 1000);
   const dot = randomDot(dots);
   dot.classList.add('glow');
   setTimeout(() => {
     dot.classList.remove('glow');
+    moveDot(dot, time, distance);
   }, time);
 }
 setInterval(glow, 1000);
