@@ -1,0 +1,14 @@
+.dot {
+  border-radius: 50%;
+  background: blue;
+  height: 50px;
+  width: 50px;
+  transform: 2s;
+}
+.glow {
+  /* box-shadow: pink; */
+  filter: blur(8px);
+}
+body {
+  background: black;
+}
