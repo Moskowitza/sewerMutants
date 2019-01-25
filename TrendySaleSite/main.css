@@ -19,35 +19,35 @@ img {
   transition: none;
 }
 
-.top {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.721);
-  width: 100%;
+.HeaderContent {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 0 10px;
-  z-index: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: black;
+  transform: translate3d(0px, 0px, 0px);
+  -webkit-font-smoothing: antialiased;
+  /* position: relative; */
+  padding: 0px 40px;
+  transition: background-color 300ms ease 0s;
 }
-nav {
+.LeftLinks {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   width: 30vw;
   max-width: 450px;
 }
-.center {
+.LogoLink {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.mission {
-  background: hsla(0, 100%, 90%, 100);
-  float: left;
-  height: 500px;
-  width: 100%;
-  z-index: 1;
+.RightLinks {
+  display: flex;
+  margin-left: auto;
 }
 .menu-item {
   font-family: StyreneA, sans-serif;
