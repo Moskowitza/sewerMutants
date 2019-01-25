@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: lightgrey;
+}
+#root {
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.square {
+  background: pink;
+  border: solid black 1px;
+  display: inline-block;
+}
+
+#info {
+  background: pink;
+  border: solid black 1px;
+  margin: 10px;
+  border-radius: 10px;
+}
