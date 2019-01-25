@@ -39,6 +39,32 @@ img {
   width: 30vw;
   max-width: 450px;
 }
+.hamberder {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .menu-item {
+    display: none;
+  }
+  .hamberder {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .LeftLinks.responsive {
+    position: relative;
+  }
+  .LeftLinks.responsive .hamberder {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .LeftLinks.responsive .menu-item {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 .LogoLink {
   position: absolute;
   left: 50%;
