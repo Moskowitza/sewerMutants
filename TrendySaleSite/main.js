@@ -1,12 +1,17 @@
 const hamberder = document.querySelector('.hamberder');
-function myFunction() {
-  console.log('loaded script');
-  // const menu = document.querySelector('.LeftLinks');
-  // console.log('loaded script');
-  // if (menu.className === 'LeftLinks') {
-  //   menu.className += ' responsive';
-  // } else {
-  //   menu.className = 'LeftLinks';
-  // }
+const closebtn = document.querySelector('.closebtn');
+
+function openNav() {
+  console.log('open');
+  document.getElementById('mySidenav').style.width = '250px';
 }
-hamberder.addEventListener('click', myFunction);
+
+function closeNav() {
+  console.log('close');
+  document.getElementById('mySidenav').style.width = '0';
+}
+
+hamberder.addEventListener('click', openNav);
+closebtn.addEventListener('click', closeNav);
+
+// window.addEventListener('resize', removeActive);
