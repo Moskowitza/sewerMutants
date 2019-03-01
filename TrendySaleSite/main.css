@@ -113,16 +113,6 @@ body {
 }
 
 /* PARALLAX */
-.HomepageContent {
-  position: absolute;
-  text-align: center;
-  top: 100%;
-  height: 500px;
-  width: 100%;
-  background-color: pink;
-  color: black;
-  font-size: 36px;
-}
 .StickyHero {
   position: absolute;
   left: 0;
@@ -171,6 +161,67 @@ body {
   transition: all 300ms ease 0s;
 }
 
+.HomepageContent {
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 2000;
+  background: rgb(255, 255, 255);
+}
+.InfoWrapper {
+  padding: 100px 0px 80px;
+  text-align: center;
+  background-color: rgb(250, 245, 243);
+}
+.Grid {
+  display: grid;
+  grid-template-columns:
+    [left] minmax(9%, 1fr) [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] [col-start] minmax(0px, 70px) [col-end] [col-start] minmax(
+      0px,
+      70px
+    )
+    [col-end] minmax(9%, 1fr) [right];
+  grid-column-gap: 1.5vw;
+}
+@media (min-width: 768px) {
+  .StyledColumn {
+    grid-column: 4 col-start / 9 col-end;
+  }
+  .StyledAccent {
+    font-size: 24px;
+  }
+}
+.StyledAccent {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  text-transform: none;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .parallax {
   /* The image used */
   background-image: url("cow.jpg");
@@ -185,8 +236,44 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* @media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
+
+.BackgroundWrapper {
+  background-color: rgb(255, 255, 255);
+}
+.Wrapper .AccentLight {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 120px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: StyreneA, sans-serif;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .Wrapper {
+    height: 220px;
   }
-} */
+}
+.StyledColumn {
+}
+.ProductWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.Product {
+}
+.ImgWrapper .productImg {
+  background-image: url("Daiya.jpg");
+  height: 200px;
+  width: 200px;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ProductInfo .StyledDynamicComponent;
