@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      div {
+        float: left;
+        position: relative;
+        margin: 10px;
+      }
+
+      a {
+        display: inline-block;
+      }
+      h1 {
+        position: absolute;
+        z-index: 100;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+        background-color: aqua;
+        margin: 15px auto;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <a href="#">
+        <img src="https://via.placeholder.com/300" alt="" />
+      </a>
+      <h1>HEY</h1>
+    </div>
+
+    <div class="box clearfix">
+      <a href="#">
+        <img src="https://via.placeholder.com/300" alt="" />
+      </a>
+      <h1>HEY</h1>
+    </div>
+
+    <div class="box">
+      <a href="#">
+        <img src="https://via.placeholder.com/300" alt="" />
+      </a>
+      <h1>HEY</h1>
+    </div>
+
+    <div class="box clearfix">
+      <a href="#">
+        <img src="https://via.placeholder.com/300" alt="" />
+      </a>
+      <h1>HEY</h1>
+    </div>
+
+    <div class="box">
+      <a href="#">
+        <img src="https://via.placeholder.com/300" alt="" />
+      </a>
+      <h1>HEY</h1>
+    </div>
+  </body>
+</html>

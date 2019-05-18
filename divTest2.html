@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        position: relative;
+      }
+      .label {
+        margin-top: -40px;
+        background-color: bisque;
+        /* z-index: 10; */
+        text-align: center;
+        position: relative;
+      }
+      a {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://via.placeholder.com/150" />
+      <div class="label">
+        This Is Amazing
+      </div>
+      <a href="https://www.google.com"></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+header,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  height: 200px;
+  width: 100%;
+  background-color: cornflowerblue;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+.above {
+  display: inline-block;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  align-self: center;
+  margin: -20px 20px 20px 20px;
+}
