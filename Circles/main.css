@@ -1,19 +1,27 @@
 div#main {
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    margin: 0 auto;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 div.circle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-    border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 body {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+#fancyBorder {
+  height: 200px;
+  background: radial-gradient(circle, black, white);
+  width: 100px;
+  border: solid 10px;
+  border-radius: 10px 100px / 120px;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
 }
