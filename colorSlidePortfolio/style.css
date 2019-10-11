@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 40px;
+    background-color: rgb(72, 65, 198);
+    display: flex;
+    justify-content: center;
+  }
+  .name {
+    padding-top: 8px;
+    margin-bottom: -8px;
+    background-color: yellow;
+  }
+  .about {
+    margin: 20px;
+  }
+  .img-face {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: rgb(72, 65, 198);
+    background: linear-gradient(
+      60deg,
+      rgba(72, 65, 198, 1) 0%,
+      rgba(198, 18, 210, 1) 22%,
+      rgba(49, 109, 216, 1) 47%,
+      rgba(236, 83, 83, 1) 63%,
+      rgba(0, 212, 255, 1) 84%
+    );
+    border: rgb(72, 65, 198) solid 6px;
+    shape-outside: circle(50%);
+    float: left;
+    margin: 10px;
+  }
+  .img-text {
+    padding: 10px;
+    margin-top: 50px;
+  }
+}

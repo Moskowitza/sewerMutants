@@ -1,61 +1,34 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Aaron Moskowitz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
-
-<body>
-
-    <header>
-            <div class="decoration"></div>
-        <div id="logo">
-            Aaron Moskowitz
-        </div>
-       
-    </header>
-    <nav id="main">
-        <ul class="nav-items">
-            <li class="nav-item"><a href="#">Social</a></li>
-            <li class="nav-item"><a href="#">Projects</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-            <li class="nav-item"><a href="#">Portfolio</a></li>
-        </ul>
-    </nav>
+  </head>
+  <body>
+    <header class="header"><div class="name">moskowitza.github.io</div></header>
     <main>
-        <div class="panel about" data-color="indigo">
-            <h2>Welcome</h2>
-            <p>
-                Hello and thank you for visiting my github.io page. I'm a full-stack developer making the most out of
-                JavaScript. I love learning new tips and tricks. Follow me on github if you're interested in seeing
-                what I'm learning today.
-            </p>
-        </div>
-        <div class="panel skills" data-color="blue">
-            <h2>Skills</h2>
-            <p>
-                Everyday I'm sharpening my tools. So much changes in web Development that the best skill to have is being ready to learn.
-            </p>
-            <ul>
-                <li>User interfaces with React</li>
-                <li>APIs, bringing data to a user interface </li>
-                <li>Data storage...ODM or ORM. </li>
-                <li>Vanilla JavaScript</li>
-            </ul>
-        </div>
-        <div class="panel site" data-color="violet">
-            <h2>This Page</h2>
-            <p>I've tried keeping this site simple for a few reasons,  github pages only hosts static pages and i wanted to show off my front-end skills. I ripped out the libraries.  No JQuery, Materialize or BootStrap here. Poke around the console to find out more.</p>
-            <p>I have other personal projects hosted on heroku and github and you can find links to them under the portfolio tab.  They're choke full of bits and pieces I've learned along the way.</p>
-        </div>
+      <div class="about">
+        <img src="myFace.svg" class="img-face" />
+        <span class="img-text">
+          Hello and thank you for visiting my github.io page. I'm a full-stack
+          developer in Philadelphia, PA. I have a background in Biomedical
+          Engineering, Healthcare Policy and Software Development. I enjoy
+          showing new developers the joys of the MERN stack.
+        </span>
+      </div>
+      <section id="projects">
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <div class="footer-left">left</div>
+        <div class="footer-mid">mid</div>
+        <div class="footer-right">right</div>
+      </footer>
     </main>
-    <footer>&copy; footer info</footer>
-    <script src="main.js"></script>
-    <script src="nav.js"></script>
-</body>
-
+  </body>
 </html>
