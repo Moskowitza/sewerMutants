@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: black;
+    }
+
+    svg {
+      margin: 0 auto;
+      display: block;
+      animation: rotate 100s;
+    }
+
+    svg > line {
+      /* To drag in a line, set it's length and move it out of view with the offset */
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 5s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(359deg);
+      }
+    }
+  </style>
+  <body>
+    <svg id="heptagram" width="200" height="200"></svg>
+  </body>
+  <script>
+    const getVertices = circle => {
+      const angle = (2 * Math.PI) / 7;
+      const vertices = [];
+      for (let i = 0; i < 7; i++) {
+        const y = Math.abs(
+          Math.sin(angle * i) * circle.getAttribute('r') -
+            parseFloat(circle.getAttribute('cy'))
+        );
+        const x =
+          Math.cos(angle * i) * circle.getAttribute('r') +
+          parseFloat(circle.getAttribute('cx'));
+        vertices.push({ x, y });
+      }
+      return vertices;
+    };
+
+    const circle = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'circle'
+      );
+      circle.setAttribute('r', 80);
+      circle.setAttribute('cx', '100');
+      circle.setAttribute('cy', '100');
+      circle.setAttribute('stroke', 'red');
+    console.log(getVertices(circle))
+   
+
+  </script>
+</html>

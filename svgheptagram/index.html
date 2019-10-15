@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: black;
+    }
+
+    svg {
+      margin: 0 auto;
+      display: block;
+      animation: rotate 100s;
+    }
+
+    svg > line {
+      /* To drag in a line, set it's length and move it out of view with the offset */
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 5s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(359deg);
+      }
+    }
+  </style>
+  <body>
+    <svg id="heptagram" width="200" height="200"></svg>
+  </body>
+  <script>
+    const getVertices = circle => {
+      const angle = (2 * Math.PI) / 7;
+      const vertices = [];
+      for (let i = 0; i < 7; i++) {
+        const y = Math.abs(
+          Math.sin(angle * i) * circle.getAttribute('r') -
+            parseFloat(circle.getAttribute('cy'))
+        );
+        const x =
+          Math.cos(angle * i) * circle.getAttribute('r') +
+          parseFloat(circle.getAttribute('cx'));
+        vertices.push({ x, y });
+      }
+      return vertices;
+    };
+
+    const addVertex = (vertex, heptagramContainer) => {
+      const circle = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'circle'
+      );
+      circle.setAttribute('r', 4);
+      circle.setAttribute('cx', vertex.x);
+      circle.setAttribute('cy', vertex.y);
+      circle.setAttribute('stroke', 'red');
+      circle.setAttribute('fill', 'red');
+      heptagramContainer.appendChild(circle);
+    };
+    const joinAlternateVertices = (vertices, heptagramContainer) => {
+      for (let i = 0; i < vertices.length; i++) {
+        const newLine = document.createElementNS(
+          'http://www.w3.org/2000/svg',
+          'line'
+        );
+        newLine.setAttribute('x2', vertices[(i + 2) % vertices.length].x);
+        newLine.setAttribute('y2', vertices[(i + 2) % vertices.length].y);
+        newLine.setAttribute('x1', vertices[i].x);
+        newLine.setAttribute('y1', vertices[i].y);
+        newLine.setAttribute('stroke', 'blue');
+        newLine.setAttribute('stroke-width', '2');
+
+        heptagramContainer.appendChild(newLine);
+      }
+    };
+    const generateHeptagram = () => {
+      const radius = 80;
+      const heptagramContainer = document.getElementById('heptagram');
+      heptagramContainer.innerHTML = null;
+      const circle = document.createElementNS(
+        'http://www.w3.org/2000/svg',
+        'circle'
+      );
+      circle.setAttribute('r', radius);
+      circle.setAttribute('cx', '100');
+      circle.setAttribute('cy', '100');
+      circle.setAttribute('stroke', 'red');
+      circle.setAttribute('fill', 'transparent');
+
+      setTimeout(() => heptagramContainer.appendChild(circle), 1000);
+      const vertices = getVertices(circle);
+      vertices.map(vertex =>
+        setTimeout(() => addVertex(vertex, heptagramContainer), 1500)
+      );
+
+      joinAlternateVertices(vertices, heptagramContainer);
+    };
+    generateHeptagram();
+  </script>
+</html>
