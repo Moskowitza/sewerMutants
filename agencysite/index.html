@@ -37,10 +37,13 @@
   /> -->
   </head>
   <body>
-    <!-- topTools -->
-    <!-- <div class="container"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-      <div class="navbar-nav-scroll mr-auto">
+    <header>
+      <!-- topTools -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        role="navigation"
+      >
+        <!-- <div class="navbar-nav-scroll mr-auto">
         <ul class="navbar-nav bd-navbar-nav flex-row">
           <li class="nav-item btn-facebook">
             <a class="nav-link p-2" href="https://www.google.com"
@@ -73,54 +76,188 @@
             ></a>
           </li>
         </ul>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      </div> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-nav-scroll ml-auto collapse navbar-collapse"
+          id="navbarText"
+        >
+          <ul class="navbar-nav bd-navbar-nav flex-row  ml-auto ">
+            <li class="nav-item">
+              <form class="form-inline my-2 my-lg-0 ">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn my-2 my-sm-0 nav-link" type="submit">
+                  <i class="fas fa-search fa-lg"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2" href="https://www.google.com">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2" href="https://www.google.com">ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2" href="https://www.google.com">JOIN</a>
+            </li>
+            <li class="nav-item">
+              <button class="p-2">EN<i class="fas fa-chevron-down"></i></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- PageNav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img
+          src="https://picsum.photos/160/80"
+          width="160"
+          height="80"
+          alt=""
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto border-bottom">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Join</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events & CLE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources for Residents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Publications</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Bread Crumbs -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <!-- jumbotron Header -->
       <div
-        class="navbar-nav-scroll ml-auto collapse navbar-collapse"
-        id="navbarText"
+        class="jumbotron jumbotron-fluid"
+        style="background-image: url('https://picsum.photos/1600/400');   background-size: cover;"
       >
-        <ul class="navbar-nav bd-navbar-nav flex-row  ml-auto ">
-          <li class="nav-item">
-            <form class="form-inline my-2 my-lg-0 ">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn my-2 my-sm-0 nav-link" type="submit">
-                <i class="fas fa-search fa-lg"></i>
-              </button>
-            </form>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2" href="https://www.google.com">MY CART</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2" href="https://www.google.com">LOGIN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2" href="https://www.google.com">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link p-2" href="https://www.google.com">JOIN</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="display-4 my-auto mx-auto" style="text-align: center;">
+            BLOOM COUNTY PUBLICATIONS
+          </h1>
+        </div>
       </div>
-    </nav>
-    <!-- </div> -->
-    <!-- Nav -->
+    </header>
     <!-- Main -->
+    <main class="container">
+      <div class="row">
+        <div class="col-9">
+          <section>
+            <article>
+              <h5>eVersion Vol. 110</h5>
+              <h2>Bloom County Law Journal</h2>
+              <p class="text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+                sit atque autem sequi voluptatum repellendus nam dolorem,
+                mollitia quisquam ducimus architecto fuga! Blanditiis corrupti
+                ab animi cum vero, distinctio nihil quae eum ex dolor velit
+                iure. Totam quasi, hic reprehenderit amet, sapiente, dolorem
+                rerum dolorum numquam laborum asperiores illum quas!
+              </p>
+              <p class="text-justify">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                cupiditate voluptates esse modi, consequuntur consequatur?
+              </p>
+            </article>
+            <button type="button" class="btn btn-primary">Login</button>
+            <div id="banner-join" class="row bg-light mt-4">
+              <div class="col-9 p-2">
+                <h5>Become a member of The Bloom County Bar Association</h5>
+              </div>
+              <div class="col-3 p-2">
+                <button type="button" class="btn btn-primary">Login</button>
+                <h5>
+                  See All The
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Benefits</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-3">
+          <aside
+            class="bg-light p-2 pb-4 mb-4 mx-auto"
+            style="text-align:center;"
+          >
+            <h5>
+              Advertise in Bloom County Law Journal
+            </h5>
+            <button class="bg-light p-2">Get Rates</button>
+          </aside>
+          <aside
+            class="bg-light p-2 pb-4 mb-4 mx-auto"
+            style="text-align:center;"
+          >
+            <h5>For Members</h5>
+            <ul style="text-align:left;">
+              <li>eVersion-Current</li>
+              <li>eVersion-100</li>
+              <li>eVersion-101</li>
+              <li>eVersion-102</li>
+              <li>eVersion-103</li>
+            </ul>
+            <button class="bg-light p-2">Login</button>
+            <p id="acrobat" class="sm">
+              View and download in a Portable Data Format file (pdf). Download
+              free Adobe Acrobat Reader.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
   </body>
 </html>
