@@ -43,42 +43,8 @@
         class="navbar navbar-expand-lg navbar-dark bg-dark"
         role="navigation"
       >
-        <!-- <div class="navbar-nav-scroll mr-auto">
-        <ul class="navbar-nav bd-navbar-nav flex-row">
-          <li class="nav-item btn-facebook">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-facebook fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav-item btn-twitter">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-twitter fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav-item btn-instagram">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-instagram fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav-item btn-linkedin">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-linkedin fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav-item btn-youtube">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-youtube fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav-item btn-flickr">
-            <a class="nav-link p-2" href="https://www.google.com"
-              ><i class="fab fa-flickr fa-2x"></i
-            ></a>
-          </li>
-        </ul>
-      </div> -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
@@ -89,10 +55,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="navbar-nav-scroll ml-auto collapse navbar-collapse"
+          class="navbar-nav-scroll float-right collapse navbar-collapse"
           id="navbarText"
         >
-          <ul class="navbar-nav bd-navbar-nav flex-row  ml-auto ">
+          <ul
+            class="navbar-nav bd-navbar-nav flex-row  ml-auto float-right pt-2"
+          >
             <li class="nav-item">
               <form class="form-inline my-2 my-lg-0 ">
                 <input
@@ -259,5 +227,66 @@
       </div>
     </main>
     <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col pt-5 pb-5" style="color:white;">
+            <address>
+              BERKS COUNTY BAR ASSOCIATION<br />
+              544 Court Street P.O. Box 1058<br />
+              Reading, Pennsylvania<br />
+            </address>
+            <div>
+              <p>Phone: 610-375-4591</p>
+              <p>Fax: 610-373-0256</p>
+            </div>
+            <div>
+              ©1995-2019 The Berks County Bar Association. All rights reserved.
+            </div>
+          </div>
+          <div class="col pt-5 pb-5">
+            <ul class="navbar-nav bd-navbar-nav flex-row float-right">
+              <li class="nav-item btn-facebook">
+                <a class="nav-link p-2 text-light" href="https://www.google.com"
+                  ><i class="fab fa-facebook fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item btn-twitter">
+                <a class="nav-link p-2 text-light" href="https://www.google.com"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item btn-instagram">
+                <a class="nav-link p-2 text-light" href="https://www.google.com"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+              <li class="nav-item btn-linkedin">
+                <a class="nav-link p-2 text-light" href="https://www.google.com"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+            <div
+              class="float-right pb-5"
+              style="position:absolute; bottom:0; right:0"
+            >
+              <ul class="nav justify-content-end">
+                <li class="nav-item text-light">
+                  <a class="nav-link text-light" href="#">Site map </a>
+                </li>
+
+                <li class="nav-item text-light">
+                  <a class="nav-link text-light" href="#">Privacy Policy </a>
+                </li>
+                <li class="nav-item text-light">
+                  <a class="nav-link text-light" href="#">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
